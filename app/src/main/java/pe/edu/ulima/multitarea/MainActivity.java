@@ -25,6 +25,13 @@ public class MainActivity extends AppCompatActivity {
         but.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                TareaComplejaTask tarea = new TareaComplejaTask(/*but*/);
+                tarea.execute("param1","param2");
+            }
+        });
+        /*but.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 final Runnable porcionUI = new Runnable() {
                     @Override
                     public void run() {
@@ -53,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
 
-        });
+        });*/
         /*but.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
